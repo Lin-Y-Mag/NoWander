@@ -1,0 +1,13 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        // 这里可以保持空，所有仓库都在 settings.gradle 中管理
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0' // 确保使用正确的 Gradle 插件版本
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
